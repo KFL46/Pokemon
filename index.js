@@ -1,0 +1,2 @@
+
+$("#idelem").click(fonction)
