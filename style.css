@@ -1,47 +1,32 @@
-#nav 
-{
-   margin:0;
-   padding:0;
-   background:#808259 url('nav_bg.jpg') 0 0 repeat-x;
-}
-#nav li 
-{
-   display:inline;
-   padding:0;
-   margin:0;
-}
-#nav a:link, #nav a:visited 
-{
+nav{
+   margin:0 auto;
+   text-align: center;
    color:#000;
-   background:#b2b580;
-   padding:20px 40px 4px 10px;
-   float:left;
-   width:auto;
-   border-right:1px solid #42432d;
-   text-decoration:none;
+   /*background:#b2b580;*/
+   padding:30px 50px 8px 20px;
+}
+button{
    font:bold 1em/1em Arial, Helvetica, sans-serif;
-   text-transform:uppercase;
-   text-shadow: 2px 2px 2px #555;
+   font: size 20px;
+   text-align: center;
+   padding: 10px;
+   color:  ivory;
+   background-color:#1fe0;
 }
-#nav a:hover 
-{
-   color:#fff;
-   background:#727454;
+body{
+   margin:0;
+   padding:0;
+   background: url(./images/bgpokemon.jpg) no-repeat center fixed; 
+   background-size: cover; 
+ }
+#resultElmt{
+/*background-color: white;*/
+color: black;
+text-align: center;
+background-position: center;
 }
-#home #nav-home a
-{
-  background:#e35a00;
-  color:#fff;
-  text-shadow:none;
-}
- 
-#home #nav-home a:hover 
-{
-  background:#e35a00;
-}
- 
-#nav a:active 
-{
-   background:#e35a00;
-   color:#fff;
+#tabList{
+   background-color: ivory; 
+   block-size: auto;
+writing-mode: horizontal-tb;
 }
