@@ -91,11 +91,14 @@ $("#berriesList").click(() => {
       dataType: "json",
     });
   });
-  /* $("#precedant").click(function() {
+  $("#precedant").click(() {
     $.ajax({
-
-    })
-  };*/
+      type: "GET",
+      url: "thisUrl";
+      data: "",
+      dataType:"json",
+    });
+  });
   
   function successProc(data) {
     console.log(data)
@@ -115,6 +118,7 @@ $("#berriesList").click(() => {
       jdeAttachElem("ligneList" + index, "div", ["titreLigneList"], data["results"][index]["name"], "");
     }
     jdeAttachElem("contList", "div", ["contenerBout"], "", "contBoutList");
+    
     if (data["previous"] !== null) {
       let parsedUrl = new URL(data["previous"]);
       jdeAttachElem("contBoutList", "div", ["bout"], "<-", "boutPrevious");
@@ -133,7 +137,11 @@ $("#berriesList").click(() => {
   (function(data) {
     console.log("affichage du titre de ma liste apres le clic" + data)
   })("titre");
-
+  
+  function myFunction(){
+    var thisUrl = false;
+    document.getElementById("Précédant").innerHTML = url;
+  }
 
  
   /**
