@@ -91,6 +91,11 @@ $("#berriesList").click(() => {
       dataType: "json",
     });
   });
+  /* $("#precedant").click(function() {
+    $.ajax({
+
+    })
+  };*/
   
   function successProc(data) {
     console.log(data)
@@ -130,11 +135,7 @@ $("#berriesList").click(() => {
   })("titre");
 
 
- /* function onClickCallback(){
-    var i = 0;
-    return function(data){
-          return i++;
-    } */ 
+ 
   /**
    * Fonction permettant d'ajouter un element dans un autre
    * 

@@ -1,7 +1,7 @@
 nav{
    margin:0 auto;
    text-align: center;
-   color:#000;
+   color: ivory ;
    /*background:#b2b580;*/
    padding:30px 50px 8px 20px;
 }
@@ -16,17 +16,15 @@ button{
 body{
    margin:0;
    padding:0;
-   background: url(./images/bgpokemon.jpg) no-repeat center fixed; 
+   background: url(./images/bgpokemon1.jpg) no-repeat center fixed; 
    background-size: cover; 
  }
-#resultElmt{
+#resultElmt {
 /*background-color: white;*/
-color: black;
+color: white;
 text-align: center;
 background-position: center;
-}
-#tabList{
-   background-color: ivory; 
-   block-size: auto;
-writing-mode: horizontal-tb;
+background-color:transparent;
+display: flex;
+flex-direction: column;
 }
