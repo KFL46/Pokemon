@@ -3,7 +3,7 @@ nav{
    text-align: center;
    color: ivory ;
    /*background:#b2b580;*/
-   padding:30px 50px 8px 20px;
+   padding:15px 15px 8px 20px;
 }
 button{
    font:bold 1em/1em Arial, Helvetica, sans-serif;
@@ -12,6 +12,7 @@ button{
    padding: 10px;
    color:  ivory;
    background-color:#1fe0;
+   
 }
 body{
    margin:0;
@@ -27,4 +28,14 @@ background-position: center;
 background-color:transparent;
 display: flex;
 flex-direction: column;
+margin:25px auto;
+}
+.bout{
+   font:bold 1em/1em Arial, Helvetica, sans-serif;
+   font: size 20px;
+   text-align: justify;
+   padding: 10px;
+   color:  ivory;
+   background-color:#1fe0;
+   position: initial;
 }

@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="style.css" type="text/css" media="screen"/>
 </head>
 <body>
-   <nav>
+    <nav>
         <button id="berriesList">berries</button>
         <button id="contestsList">contests</button>
         <button id="encountersList">encounters</button>
@@ -17,7 +17,9 @@
         <button id="machinesList">machines</button>
         <button id="movesList">moves</button>
         <button id="pokemonList">pokemon</button>
-   </nav>
+    </nav>
+    <div class="bout" id="boutPrevious" onClick="appelAjax(data['previous'])">Précédant</div>
+    <div class="bout" id="boutNext" onClick="appelAjax(data['next'])">Suivant</div>
 <section>
     <div id ="result"></div>
     <div id="resultElmt"></div>
@@ -26,9 +28,7 @@
     <script src ="https://code.jquery.com/jquery-3.4.1.js" 
     intégrité = "sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU = " crossorigin = " anonyme "></script>
     <script src ="index.js"></script>
-    <footer id="footer">
-        <button id="previous">Précédant</button>
-        <button id="next">Suivant</button>   
+    <footer>
     </footer>
 </body>
 </html>

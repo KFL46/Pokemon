@@ -91,14 +91,17 @@ $("#berriesList").click(() => {
       dataType: "json",
     });
   });
-  $("#precedant").click(() {
-    $.ajax({
-      type: "GET",
-      url: "thisUrl";
-      data: "",
-      dataType:"json",
-    });
-  });
+  function appelAjax(url){
+    return function(){
+      $.ajax({
+        type: "GET",
+        url: url,
+        data: "",
+        dataType:"json",
+        success: successProc,
+      });
+    }
+  }
   
   function successProc(data) {
     console.log(data)
@@ -121,14 +124,14 @@ $("#berriesList").click(() => {
     
     if (data["previous"] !== null) {
       let parsedUrl = new URL(data["previous"]);
-      jdeAttachElem("contBoutList", "div", ["bout"], "<-", "boutPrevious");
+      jdeAttachElem("contBoutList", "div", ["bout"], "Précédant", "boutPrevious", appelAjax(data["previous"]))
     }
     else {
       jdeAttachElem("contBoutList", "div", "", "", "")
     }
     if (data["next"] !== null) {
       let parsedUrl = new URL(data["next"]);
-      jdeAttachElem("contBoutList", "div", ["bout"], "->", "boutNext");
+      jdeAttachElem("contBoutList", "div", ["bout"], "Suivant", "boutNext");
     }
     else {
       jdeAttachElem("contBoutList", "div", "", "", "")
@@ -138,10 +141,6 @@ $("#berriesList").click(() => {
     console.log("affichage du titre de ma liste apres le clic" + data)
   })("titre");
   
-  function myFunction(){
-    var thisUrl = false;
-    document.getElementById("Précédant").innerHTML = url;
-  }
 
  
   /**
